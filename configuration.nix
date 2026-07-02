@@ -151,6 +151,7 @@ in
     NIXOS_OZONE_WL     = "1";              # Chromium/Electron через Wayland
     MOZ_ENABLE_WAYLAND = "1";             # Firefox через Wayland
     XDG_SESSION_TYPE   = "wayland";
+    XDG_CURRENT_DESKTOP = "niri";          # Додано для ідентифікації Niri
   };
 
   # ─────────────────────────────────────────────
@@ -221,7 +222,7 @@ in
       pkgs.xdg-desktop-portal-gnome
       pkgs.xdg-desktop-portal-gtk
     ];
-    config.common.default = [ "gnome" "gtk" ];
+    config.niri.default = [ "gnome" "gtk" ];
   };
 
   environment.systemPackages = with pkgs; [

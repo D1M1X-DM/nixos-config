@@ -210,7 +210,7 @@ in
   nixpkgs.config.allowUnfree = true;
 
   nixpkgs.config.permittedInsecurePackages = [
-    "pnpm-10.2.92"
+    "pnpm-10.29.2"
   ];
 
   environment.systemPackages = with pkgs; [

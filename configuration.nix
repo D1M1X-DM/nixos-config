@@ -213,6 +213,17 @@ in
     "pnpm-10.29.2"
   ];
 
+
+# Налаштування порталів для роботи демонстрації екрана в Niri
+  xdg.portal = {
+    enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gnome
+      pkgs.xdg-desktop-portal-gtk
+    ];
+    config.common.default = [ "gnome" "gtk" ];
+  };
+
   environment.systemPackages = with pkgs; [
     # ── Термінали ──
     alacritty

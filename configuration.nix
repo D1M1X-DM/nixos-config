@@ -219,7 +219,7 @@ in
     google-chrome
 
     # ── Месенджери ──
-    discord
+    vesktop
     telegram-desktop
 
     # ── Розробка ──

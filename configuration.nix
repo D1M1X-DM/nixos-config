@@ -209,6 +209,10 @@ in
   # ─────────────────────────────────────────────
   nixpkgs.config.allowUnfree = true;
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "pnpm-10.2.92"
+  ];
+
   environment.systemPackages = with pkgs; [
     # ── Термінали ──
     alacritty

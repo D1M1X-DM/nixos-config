@@ -263,6 +263,7 @@ in
     eog                # Eye of GNOME — переглядач зображень
     loupe              # Сучасний GTK4 переглядач зображень
     cava               # Аудіо візуалізатор в термінал
+    easyeffects
     # ── Офіс ──
     libreoffice-fresh  # Повний офісний пакет (Writer, Calc, Impress…)
     hunspell           # Перевірка орфографії

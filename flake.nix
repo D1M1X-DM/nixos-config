@@ -22,13 +22,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    creamlinux-installer = {
-      type = "github";
-      owner = "Novattz";
-      repo = "creamlinux-installer";
-      flake = false;
-    };
-
     noctalia = {
       url = "github:noctalia-dev/noctalia/legacy-v4";
       inputs.nixpkgs.follows = "nixpkgs";

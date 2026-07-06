@@ -152,6 +152,7 @@ in
     MOZ_ENABLE_WAYLAND = "1";             # Firefox через Wayland
     XDG_SESSION_TYPE   = "wayland";
     XDG_CURRENT_DESKTOP = "niri";          # Додано для ідентифікації Niri
+    WEBKIT_DISABLE_DMABUF_RENDERER = "1";  #(фиксы рендеринга для Nvidia):
   };
 
   # ─────────────────────────────────────────────
@@ -317,6 +318,7 @@ in
     # ── Ігри ──
     steam
     r2modman
+    (import inputs.creamlinux-installer { inherit pkgs; })
     # ── Теми та курсори ──
     bibata-cursors
     adwaita-icon-theme

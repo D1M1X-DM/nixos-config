@@ -222,7 +222,14 @@ in
       pkgs.xdg-desktop-portal-gnome
       pkgs.xdg-desktop-portal-gtk
     ];
-    config.niri.default = [ "gnome" "gtk" ];
+    config = {
+      niri = {
+        # Принудительно отдаем скриншейр под управление GTK-портала
+        "org.freedesktop.impl.portal.ScreenCast" = [ "gtk" ];
+        # Для всего остального оставляем твой дефолт
+        "default" = [ "gnome" "gtk" ];
+      };
+    };
   };
 
   environment.systemPackages = with pkgs; [

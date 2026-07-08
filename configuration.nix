@@ -213,7 +213,7 @@ in
   nixpkgs.config.permittedInsecurePackages = [
     "pnpm-10.29.2"
   ];
-
+  programs.dconf.enable = true;
 
 # Налаштування порталів для роботи демонстрації екрана в Niri
   xdg.portal = {

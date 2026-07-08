@@ -223,9 +223,10 @@ in
       pkgs.xdg-desktop-portal-gtk
     ];
     config = {
-      # common применяется ко ВСЕМ окружениям, независимо от имени композитора
-      common = {
-        "org.freedesktop.impl.portal.ScreenCast" = [ "gtk" ];
+      niri = {
+        # За скринкаст ОБЯЗАН отвечать gnome, потому что Niri мимикрирует под него
+        "org.freedesktop.impl.portal.ScreenCast" = [ "gnome" ];
+        # Для всего остального (типа выбора файлов) можно использовать оба
         "default" = [ "gnome" "gtk" ];
       };
     };

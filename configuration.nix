@@ -223,10 +223,9 @@ in
       pkgs.xdg-desktop-portal-gtk
     ];
     config = {
-      niri = {
-        # Принудительно отдаем скриншейр под управление GTK-портала
+      # common применяется ко ВСЕМ окружениям, независимо от имени композитора
+      common = {
         "org.freedesktop.impl.portal.ScreenCast" = [ "gtk" ];
-        # Для всего остального оставляем твой дефолт
         "default" = [ "gnome" "gtk" ];
       };
     };
